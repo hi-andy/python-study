@@ -1,4 +1,4 @@
-
+#!/usr/bin/env python
 
 # 提示用户输入可用金额
 salary = int(input('Please input your salary: '))
@@ -8,7 +8,8 @@ goods_list = [['IPhone', 5800], ['Mac Pro', 14000], ['Book', 18], ['Bicycle', 12
 
 
 def show_goods_list(goods_input):
-    print('goods list'.capitalize().center(50, '-'))
+    print(' goods list '.title().center(50, '-'))
+
     # for i in goods_list:
     #     print(''' {_i}. {goods} '''.format(_i=goods_list.index(i)+1, goods=i))
 
