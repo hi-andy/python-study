@@ -1,0 +1,17 @@
+#!/usr/bin/env python
+
+name = input('Your name:')
+age = input('Your age:')
+job = input('Your job:')
+salary = input('Your salary:')
+
+
+info = '''
+--------------- info of {Name} ---------------
+Name: {Name}
+Age: {Age}
+Job: {Job}
+Salary: {Salary}
+''' . format(Name=name,Age=age,Job=job,Salary=salary)
+
+print(info)
