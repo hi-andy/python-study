@@ -36,3 +36,6 @@ func2(*[7, 8, 9, 10])
 func3('yonghua', 25, mname='hua', mage=25)
 func4('yonghua', 25, 7, 8, 9, mname='hua', mage=25)
 func3(**{'name': 'hua', 'age': 25})
+
+
+
