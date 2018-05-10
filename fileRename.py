@@ -4,10 +4,11 @@
 import os
 import re
 
-defaultPath = '/Users/hua/Downloads/封S榜/'
+# 存放文件目录
+filedir = '/Users/xxx/xxx'
 #path = input('请输入文件路径:')
 
-files = os.listdir(defaultPath)
+files = os.listdir(filedir)
 addstring = '.封神榜.'
 
 for file in files:
@@ -15,5 +16,5 @@ for file in files:
         #print(os.path.splittext(file))
         m = re.match(r'(\d{2}).*(mkv)$', file)
         newName = m.group(1) + addstring +  m.group(2)
-        os.rename(defaultPath + file, defaultPath + newName)
-        #print(defaultPath + file, defaultPath + newName)
+        os.rename(filedir + file, filedir + newName)
+        #print(filedir + file, filedir + newName)
