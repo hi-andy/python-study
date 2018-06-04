@@ -70,7 +70,7 @@ def get_article_data(article_url):
 
 '''
 输出文章
-@out_type 输出类型：txt文本 db数据库；默认为 html
+@out_type 输出类型：html文件 db数据库；默认为 html
 '''
 
 
@@ -103,7 +103,7 @@ def out_articles(urls, out_type='html'):
 
         path = './book/'
         if not os.path.exists(path):
-            os.mkdir(path)
+            os.makedirs(path)
 
         for key, url in enumerate(urls):
             article = get_article_data(url)
@@ -187,7 +187,7 @@ def out_articles(urls, out_type='html'):
 <metadata>\n\
     <dc-metadata  xmlns:dc="http://purl.org/metadata/dublin_core" xmlns:oebpackage="http://openebook.org/namespaces/oeb-package/1.0/">\n\
         <dc:Title>{0}</dc:Title>\n\
-        <dc:Language>en</dc:Language>\n\
+        <dc:Language>zh</dc:Language>\n\
         <dc:Creator>Andy</dc:Creator>\n\
         <dc:Copyrights>文章版本：归原作者所有</dc:Copyrights>\n\
         <dc:Publisher>Andy</dc:Publisher>\n\
