@@ -11,8 +11,7 @@ queue_name = result.method.queue
 severities = sys.argv[1:]
 if not severities:
     sys.stderr.write("Usage: %s [info] [warning] [error]\n" % sys.argv[0])
-sys.exit(1)
-print(severities)
+    sys.exit(1)
 
 for severity in severities:
     channel.queue_bind(exchange='direct_logs',
